@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-28 04:47:34 "/>
+        <attribute name="created" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDM6NTY6NDUgIjsxODE4"/>
+        <attribute name="edited" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDQ6NDc6MzQgIjsxOzE5MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vendedor" type="String" array="False" size=""/>
+            <declare name="janeiro, fevereiro, mar&#231;o, abril, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe seu nome!&quot;" newline="True"/>
+            <input variable="vendedor"/>
+            <output expression="&quot;Ol&#225; vendedor(a), informe abaixo o valor das suas vendas em seus repectivos meses!&quot;" newline="True"/>
+            <output expression="&quot;Janeiro:&quot;" newline="True"/>
+            <input variable="janeiro"/>
+            <output expression="&quot;Fevereiro:&quot;" newline="True"/>
+            <input variable="fevereiro"/>
+            <output expression="&quot;Mar&#231;o:&quot;" newline="True"/>
+            <input variable="mar&#231;o"/>
+            <output expression="&quot;Abril:&quot;" newline="True"/>
+            <input variable="abril"/>
+            <output expression="&quot;Processando...&quot;" newline="True"/>
+            <assign variable="media" expression="(janeiro+fevereiro+mar&#231;o+abril)"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="vendedor" newline="True"/>
+                    <output expression="&quot;Parab&#233;ns, Voc&#234; bateu a meta do m&#234;s e recebeu um b&#244;nus de 10%!&quot;" newline="True"/>
+                    <output expression="&quot;O valor ser&#225; depositado em sua conta!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="vendedor" newline="True"/>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o bateu a meta do m&#234;s e recebeu um b&#244;nus de 3%&quot;" newline="True"/>
+                    <output expression="&quot;O valor ser&#225; depositado em sua conta!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

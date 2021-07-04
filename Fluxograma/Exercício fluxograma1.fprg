@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-28 02:48:49 "/>
+        <attribute name="created" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDE6MzY6NTQgIjsxODE0"/>
+        <attribute name="edited" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDI6NDg6NDkgIjsxOzE5MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, total" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <assign variable="total" expression="(nota1+nota2+nota3+nota4)"/>
+            <output expression="&quot;Soma das notas: &quot; &amp;total" newline="True"/>
+            <output expression="&quot;Sua m&#233;dia &#233;: &quot; &amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

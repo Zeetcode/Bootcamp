@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-28 03:56:37 "/>
+        <attribute name="created" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDM6MzU6NTcgIjsxODE4"/>
+        <attribute name="edited" value="WmV0O1pFRVQ7MjAyMS0wNi0yODsiMDM6NTY6MzcgIjsxOzE5Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <output expression="&quot;Bem-Vindo qual &#233; o seu nome?!&quot;" newline="True"/>
+            <input variable="cliente"/>
+            <output expression="&quot;Bem-Vindo! &quot; &amp;cliente" newline="True"/>
+            <output expression="&quot;Voc&#234; possui um cart&#227;o de cr&#233;dito?!&quot;" newline="True"/>
+            <output expression="&quot;'true' Para sim e 'false' para n&#227;o&quot;" newline="True"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                    <output expression="&quot;Sua compra foi efetuada com sucesso!&quot;" newline="True"/>
+                    <output expression="&quot;Obrigado pela pref&#234;rencia, volte sempre!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Desculpe, mas a loja s&#243; aceita pagamentos via cart&#227;o de credito!&quot;" newline="True"/>
+                    <output expression="&quot;Volte sempre!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
