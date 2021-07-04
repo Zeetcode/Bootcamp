@@ -6,7 +6,7 @@
 
 - Portugol
 
-- GIT & Github
+- GIT & Github.
 
   
 
